@@ -36,7 +36,7 @@ if __name__=="__main__":
     for i in range(len(file_hashes)):
         print("hash_"+str(i)+" :",file_hashes[i])
 
-# Note :works fine in python 2
+# Note :works fine in python 2  if you are  using python3 then change line 18 to hasher.update(k[0].encode()+k[1].encode())  bcz we need to encode the string before hashing
 """
 Output :
 Finding the merkel tree hash of 9 random hashes
